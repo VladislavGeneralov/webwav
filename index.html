@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Batch Gainer</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h2>Batch Gainer by electroniqa</h2>
+
+  <input id="gain" type="number" step="0.1" value="2.0" />
+
+  <br><br>
+
+  <div id="dropzone" style="
+    width: 320px;
+    height: 120px;
+    border: 2px dashed #999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 20px;
+  ">
+    Drop WAV files here
+  </div>
+
+  <button id="start">Start</button>
+
+  <p id="status">waiting for your files</p>
+
+  <!-- progress bar -->
+  <div style="width:320px; height:10px; border:1px solid #aaa; margin-top:10px;">
+    <div id="bar" style="height:100%; width:0%; background:black;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
